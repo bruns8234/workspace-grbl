@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Workspace / grbl</title>
+    <title>Workspace / grbl-v1</title>
 
     <!-- ChiliPeppr is based on bootstrap CSS. -->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -164,7 +164,7 @@ body.hover {
     <script type='text/javascript'>
     //<![CDATA[
 /* global cpdefine chilipeppr cprequire */
-cprequire_test(["inline:com-chilipeppr-workspace-grbl"], function(ws) {
+cprequire_test(["inline:com-chilipeppr-workspace-grbl-v1"], function(ws) {
 
     console.log("initting workspace");
 
@@ -192,20 +192,20 @@ cprequire_test(["inline:com-chilipeppr-workspace-grbl"], function(ws) {
     ws.init();
 
     // Do some niceties for testing like margins on widget and title for browser
-    $('title').html("grbl Workspace");
+    $('title').html("grbl-v1 Workspace");
     $('body').css('padding', '10px');
 
 } /*end_test*/ );
 
 // This is the main definition of your widget. Give it a unique name.
-cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function() {
+cpdefine("inline:com-chilipeppr-workspace-grbl-v1", ["chilipeppr_ready"], function() {
     return {
         /**
          * The ID of the widget. You must define this and make it unique.
          */
-        id: "com-chilipeppr-workspace-grbl", // Make the id the same as the cpdefine id
-        name: "Workspace / grbl", // The descriptive name of your widget.
-        desc: `A ChiliPeppr Workspace grbl.`,
+        id: "com-chilipeppr-workspace-grbl-v1", // Make the id the same as the cpdefine id
+        name: "Workspace / grbl-v1", // The descriptive name of your widget.
+        desc: `A ChiliPeppr Workspace for grbl. For new firmware v1`,
         url: "http://raw.githubusercontent.com/bruns8234/workspace-grbl-v1.1/master/auto-generated-workspace.html", // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
         fiddleurl: "http://ide.c9.io/bruns8234/chilipeppr-workspace-grbl-v1", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
         githuburl: "http://github.com/bruns8234/workspace-grbl-v1.1", // The backing github repo
@@ -1689,7 +1689,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                     <div id="com-chilipeppr-3dviewer">Load 3D Viewport Here</div>
                     <!-- Workspace Hdr -->
                     <div id="com-chilipeppr-ws-gcode-hdr" class="com-chilipeppr-ws-hdr zhigh well">
-                        GRBL Workspace
+                        GRBL v1 Workspace
                         <div id="com-chilipeppr-ws-gcode-menu" class="">
                             <div class="pull-right">
                                 <div class="dropdown xpull-right">
@@ -1759,7 +1759,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                     <!-- XYZ -->
                     <div id="com-chilipeppr-xyz" class="">Load XYZ Here</div>
                     <!-- Tinyg -->
-                    <div id="com-chilipeppr-grbl" class="">Load GRBL Here</div>
+                    <div id="com-chilipeppr-grbl-v1" class="">Load GRBL v1 Here</div>
                     <!-- WebRTC Client -->
                     <!--<div id="com-chilipeppr-webrtcclient" class="">Load WebRTC Client Here</div>-->
                     <!-- Serial Port Selector -->
